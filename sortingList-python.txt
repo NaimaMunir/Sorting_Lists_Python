@@ -1,0 +1,26 @@
+def sort_list(original, add1, delete1 ):
+    print(original) 
+    print(add1)
+    new=original+add1
+    print(new)
+    new1=list(set(new) - set(delete1))
+
+
+# Using sort() function with key as len 
+    new1.sort(key = len) 
+    
+    new1.reverse()
+
+# updated list
+    print(new1)
+ 
+
+
+
+
+
+
+original= ['ten','ten','nine','eight','four','four']
+add1=['five','five','nine','six','one','nine','ten']
+delete1=['nine','ten']
+sort_list(original, add1, delete1 )
